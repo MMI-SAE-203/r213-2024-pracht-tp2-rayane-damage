@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 const maisonsListe = [
   {
@@ -79,6 +80,7 @@ const maisonsListe = [
 
 import type { MaisonRecord } from '@/types'
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const maisonsliste: MaisonRecord[] = [
   {
     adresse: 'X rue de X ville',
@@ -160,4 +162,5 @@ const maisonsliste: MaisonRecord[] = [
 
 <template>
   <h1 class="text-2xl">Bonjour monde !</h1>
+  <MaisonCard v-bind="maisonsListe[0]" />
 </template>
