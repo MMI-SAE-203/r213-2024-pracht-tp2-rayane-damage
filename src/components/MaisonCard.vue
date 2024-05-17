@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { MaisonsResponse } from '@/pocketbase-types'
+import ImgPb from './ImgPb.vue'
 
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -14,9 +15,7 @@ const props: MaisonsResponse = defineProps< MaisonsResponse >()
     <div
       class="w-[394.67px] h-[200px] absolute left-[-0.5px] top-[-0.5px] rounded-tl-lg rounded-tr-lg bg-gray-500"
     ></div>
-    <img
-      class="w-[394.67px] h-[235px] absolute left-[-0.5px] top-[-24.5px] object-cover"
-    />
+    <ImgPb :record="props" :filename="images" :width="387" :height="235" class="absolute left-[-0.5px] top-[-24.5px] object-cover"/>
   </div>
   <div
     class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-[15px] px-5 py-[30px]"
