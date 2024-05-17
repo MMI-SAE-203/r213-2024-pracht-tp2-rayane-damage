@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { MaisonRecord } from '@/types'
+import type { MaisonsResponse } from '@/pocketbase-types'
 
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const props: MaisonRecord = defineProps< MaisonRecord >()
+const props: MaisonsResponse = defineProps< MaisonsResponse >()
 </script>
 
 <template>

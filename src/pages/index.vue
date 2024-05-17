@@ -1,9 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-import type { MaisonRecord } from '@/types'
+import type { MaisonsResponse } from '@/pocketbase-types'
 import MaisonCard from'@/components/MaisonCard.vue'
 
-const maisonsListe :MaisonRecord[] = [
+const maisonsListe :MaisonsResponse[] = [
   {
     adresse: 'X rue de X ville',
     collectionId: 'rpp079zfi15pr5i',
