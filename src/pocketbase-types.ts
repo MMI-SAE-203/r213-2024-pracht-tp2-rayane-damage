@@ -48,6 +48,7 @@ export enum MaisonsFavoriOptions {
 }
 export type MaisonsRecord = {
 	adresse?: string
+	agent: RecordIdString
 	favori?: MaisonsFavoriOptions
 	images?: string
 	nbChambres?: number
